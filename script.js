@@ -46,6 +46,20 @@ customer.futureFlavors = "mango";
 customer.todaysPurchaseCost = 5.32;
 //4. cont
 console.log(customer)
+//5. print the keys
+console.log(Object.keys(customer))
 
+const oldBooks = {
+	don_quixote: true,
+  	a_tale_of_two_cities: true,
+  	the_little_price: true,
+ } ;
+  
+ const newBooks = {
+  	the_lord_of_the_rings: true,
+  	harry_potter_and_the_sorcerers_stone: true,
+ };
 
+const myBookCollection = Object.assign( {}, oldBooks, newBooks);
+console.log(myBookCollection)
 
